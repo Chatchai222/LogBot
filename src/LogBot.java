@@ -43,6 +43,11 @@ public class LogBot {
         }
 
     }
+
+    public static void logMessage(File inDirectory, String message){
+
+    }
+
     public static String truncateString(String inString, String delimiter){
         int delimiterIndex = inString.lastIndexOf(delimiter);
         return inString.substring(0,delimiterIndex);
