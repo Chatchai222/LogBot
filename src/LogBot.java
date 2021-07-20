@@ -10,8 +10,17 @@ public class LogBot {
     private static final String greeting = "Welcome LogBot is online!\n Ready to log your message!";
     private static final String TIMEFORMAT = "yyyy-MM-dd-HH-mm-ss";
 
+    public static void terminalLogSession(){
+        System.out.println(greeting);
 
-    public static void process
+        // Get message
+        String message = LogBot.getMessageTerminal();
+        // Log onto a file
+        LogBot.logMessage(message);
+
+        System.out.println("File logged completed");
+        System.out.println("Ending the program");
+    }
     public static void logMessage(String message){
 
         // Get current time as string
